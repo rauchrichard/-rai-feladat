@@ -1,4 +1,4 @@
-# -rai-feladat
+# SZO1980
 scan (file = szo1980.txt)
 szo = scan (file = szo1980)
 plot(szo)
