@@ -1,1 +1,16 @@
 # -rai-feladat
+scan (file = szo1980.txt)
+szo = scan (file = szo1980)
+plot(szo)
+str(szo)
+plot(szo, type = "l", xlab = "t [nap]", ylab = "h [cm]")
+min(szo)
+max(szo)
+mean(szo)
+summary(szo)
+quantile(szo)
+IQR(szo)
+sd(szo)*2
+szo.norm = rnorm (length(szo), mean(szo), sd(szo))
+plot(szo, type = "l", xlab = "t [nap]", ylab = "h [cm]", lwd =2)
+lines(szo.norm)
